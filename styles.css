@@ -50,7 +50,8 @@ button {
   font-size: inherit;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
   font-size: inherit;
   border: none;
@@ -58,7 +59,10 @@ input, textarea {
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -242,7 +246,10 @@ p {
    HERO SECTION
    =========================== */
 .hero {
-  background: #0A0A0A;
+  background: #111116;
+  background-image:
+    radial-gradient(ellipse at 20% 80%, rgba(14, 165, 233, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(99, 102, 241, 0.03) 0%, transparent 50%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -254,11 +261,11 @@ p {
 .hero::after {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  width: 40%;
-  height: 100%;
-  background: radial-gradient(ellipse at 80% 50%, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
   pointer-events: none;
 }
 
@@ -522,7 +529,21 @@ p {
    CONTACT SECTION
    =========================== */
 .contact {
-  background: #0A0A0A;
+  background: #111116;
+  background-image:
+    radial-gradient(ellipse at 70% 30%, rgba(14, 165, 233, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(99, 102, 241, 0.02) 0%, transparent 50%);
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
 }
 
 .contact-grid {
@@ -537,7 +558,7 @@ p {
   margin-bottom: 20px;
 }
 
-.contact-info > p {
+.contact-info>p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.05rem;
   margin-bottom: 40px;
@@ -557,7 +578,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 10px;
   color: #0EA5E9;
   flex-shrink: 0;
@@ -588,12 +610,18 @@ p {
 .form-group textarea {
   width: 100%;
   padding: 16px 20px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   color: #FFFFFF;
   font-size: 0.95rem;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .form-group input::placeholder,
@@ -627,8 +655,8 @@ p {
    FOOTER
    =========================== */
 .footer {
-  background: #0A0A0A;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: #111116;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
   padding: 32px 0;
 }
 

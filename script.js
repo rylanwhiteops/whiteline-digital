@@ -78,19 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Build mailto link as fallback
-        const subject = encodeURIComponent(`New inquiry from ${name}`);
+        const subject = encodeURIComponent(`Discovery call request from ${name}`);
         const body = encodeURIComponent(
             `Name: ${name}\nPhone: ${phone}\nTrade: ${trade}\nMessage: ${message}`
         );
 
-        window.location.href = `mailto:info@whitelinedigital.dev?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:rylanwhite.ops@gmail.com?subject=${subject}&body=${body}`;
 
         // Show confirmation
-        submitBtn.textContent = 'Message Sent ✓';
+        submitBtn.textContent = 'Request Sent ✓';
         submitBtn.style.background = '#10B981';
 
         setTimeout(() => {
-            submitBtn.textContent = 'Send Message';
+            submitBtn.textContent = 'Book My Discovery Call';
             submitBtn.style.background = '';
             form.reset();
         }, 3000);
