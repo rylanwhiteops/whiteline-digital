@@ -909,6 +909,9 @@ p {
 @media (max-width: 768px) {
   .section-padding { padding: 80px 0; }
 
+  /* Hide hero floating cards on mobile — they overlap content */
+  .hero-card { display: none; }
+
   /* Nav Mobile */
   .nav-links {
     position: fixed;
@@ -1281,11 +1284,13 @@ p {
 }
 
 @media (max-width: 768px) {
-  .results-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .result-item  { padding: 0; }
-  .process-steps { grid-template-columns: 1fr; gap: 40px; }
-  .process-arrow { display: none; }
-  .process-step  { padding: 0; }
+  .results-grid   { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .result-item    { padding: 0; }
+  .services-grid  { grid-template-columns: 1fr !important; gap: 18px; }
+  .service-card   { padding: 28px 22px; }
+  .process-steps  { grid-template-columns: 1fr; gap: 40px; }
+  .process-arrow  { display: none; }
+  .process-step   { padding: 0; }
   .process-step p { max-width: 100%; }
 }
 
