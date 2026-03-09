@@ -53,19 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===========================
     const typewriterEl = document.getElementById('typewriter');
     const words = [
-        'restaurant',
-        'salon',
-        'landscaping business',
-        'local shop',
-        'trades business',
-        'fitness studio',
-        'law office',
+        'get more calls',
+        'get found online',
+        'look professional',
+        'win more business',
+        'stand out locally',
+        'grow faster',
     ];
 
     // First word is pre-shown in HTML — start by deleting it, then cycle
     let wordIndex  = 0;
     let charIndex  = words[0].length;
-    let isDeleting = true; // immediately start backspacing the pre-shown word
+    let isDeleting = true;
 
     function type() {
         const current = words[wordIndex];
