@@ -68,62 +68,119 @@
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
 
-    <!-- Floating card 1: New lead -->
-    <div class="hero-card hero-card-1" id="hc1">
-      <div class="hc-dot"></div>
-      <div class="hc-body">
-        <div class="hc-title">New lead</div>
-        <div class="hc-sub">Just now &middot; from Google Search</div>
-      </div>
-    </div>
-
-    <!-- Floating card 2: Quote request -->
-    <div class="hero-card hero-card-2" id="hc2">
-      <div class="hc-icon hc-icon-yellow">💬</div>
-      <div class="hc-body">
-        <div class="hc-title">Quote request</div>
-        <div class="hc-sub">Via contact form</div>
-      </div>
-    </div>
-
-    <!-- Floating card 3: Page live -->
-    <div class="hero-card hero-card-3" id="hc3">
-      <div class="hc-icon hc-icon-blue">🚀</div>
-      <div class="hc-body">
-        <div class="hc-title">Site is live</div>
-        <div class="hc-sub">Launched in 7 days</div>
-      </div>
-    </div>
-
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Local Business Websites &middot; Ontario, Canada
-        </div>
-        <h1>Websites that help you <span class="hero-tw" id="typewriter">get more calls</span><span class="tw-cursor">|</span></h1>
-        <p class="hero-sub">We build clean, modern websites for small businesses that want more calls, more bookings, and more customers. No templates. No fluff.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Book a Free Call</a>
-          <a href="#services" class="btn btn-outline">See What We Do</a>
+      <div class="hero-layout">
+
+        <!-- LEFT: Copy -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Local Business Websites &middot; Ontario, Canada
+          </div>
+          <h1>Websites that help you <span class="hero-tw" id="typewriter">get more calls</span><span class="tw-cursor">|</span></h1>
+          <p class="hero-sub">We build clean, modern websites for small businesses that want more calls, more bookings, and more customers. No templates. No fluff.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a Free Call</a>
+            <a href="#services" class="btn btn-outline">See What We Do</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Custom built</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">~7 days</span>
+              <span class="hero-stat-label">Avg. delivery</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">Ontario</span>
+              <span class="hero-stat-label">Based &amp; focused</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <span class="hero-stat-num">100%</span>
-            <span class="hero-stat-label">Custom built</span>
+        <!-- RIGHT: Browser mockup -->
+        <div class="hero-visual">
+          <div class="bmock">
+            <div class="bmock-chrome">
+              <div class="bmock-dots">
+                <span class="bd-r"></span>
+                <span class="bd-y"></span>
+                <span class="bd-g"></span>
+              </div>
+              <div class="bmock-url">smithsroofing.ca</div>
+            </div>
+            <div class="bmock-body">
+              <!-- Mock nav -->
+              <div class="bm-nav">
+                <div class="bm-logo-bar">
+                  <div class="bm-logo-icon"></div>
+                  <div class="bm-logo-text"></div>
+                </div>
+                <div class="bm-nav-right">
+                  <div class="bm-nav-link"></div>
+                  <div class="bm-nav-link"></div>
+                  <div class="bm-nav-link"></div>
+                  <div class="bm-nav-cta"></div>
+                </div>
+              </div>
+              <!-- Mock hero -->
+              <div class="bm-hero-section">
+                <div class="bm-hero-left">
+                  <div class="bm-tag"></div>
+                  <div class="bm-h1"></div>
+                  <div class="bm-h1 bm-h1-b"></div>
+                  <div class="bm-p"></div>
+                  <div class="bm-p bm-p-short"></div>
+                  <div class="bm-btns">
+                    <div class="bm-btn-primary"></div>
+                    <div class="bm-btn-ghost"></div>
+                  </div>
+                </div>
+                <div class="bm-hero-right">
+                  <div class="bm-hero-img">
+                    <div class="bm-img-inner"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Mock service cards -->
+              <div class="bm-services-row">
+                <div class="bm-svc-card"></div>
+                <div class="bm-svc-card"></div>
+                <div class="bm-svc-card"></div>
+              </div>
+            </div>
           </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-num">~7 days</span>
-            <span class="hero-stat-label">Avg. delivery</span>
+
+          <!-- Floating notification chips -->
+          <div class="hero-chip hero-chip-1">
+            <div class="chip-dot"></div>
+            <div class="chip-text">
+              <span class="chip-title">New lead received</span>
+              <span class="chip-sub">Google Search &middot; just now</span>
+            </div>
           </div>
-          <div class="hero-stat-divider"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-num">Ontario</span>
-            <span class="hero-stat-label">Based &amp; focused</span>
+
+          <div class="hero-chip hero-chip-2">
+            <span class="chip-emoji">🚀</span>
+            <div class="chip-text">
+              <span class="chip-title">Site launched</span>
+              <span class="chip-sub">6 days after first call</span>
+            </div>
+          </div>
+
+          <div class="hero-chip hero-chip-3">
+            <span class="chip-emoji">📞</span>
+            <div class="chip-text">
+              <span class="chip-title">Quote request</span>
+              <span class="chip-sub">Via contact form</span>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
